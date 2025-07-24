@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_814f1889b4622e9d0024fc595498e2b3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_814f1889b4622e9d0024fc595498e2b3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_814f1889b4622e9d0024fc595498e2b3 = L.map(
+                "map_814f1889b4622e9d0024fc595498e2b3",
+                {
+                    center: [45.5, -73.57],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6856363b1d2cf3daa0b90721ceaf7c43 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6856363b1d2cf3daa0b90721ceaf7c43.addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            var poly_line_148153e846ac138d55867f7ee8783530 = L.polyline(
+                [[45.5128006, -73.5311159], [45.5128006, -73.5311159]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 18.44}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_148153e846ac138d55867f7ee8783530.bindTooltip(
+                `<div>
+                     Parc Jean-Drapeau (Chemin Macdonald) → Parc Jean-Drapeau (Chemin Macdonald) (922 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_72d98599e935b96d490c8bb962feba64 = L.polyline(
+                [[45.50761, -73.551836], [45.50761, -73.551836]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 7.48}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_72d98599e935b96d490c8bb962feba64.bindTooltip(
+                `<div>
+                     de la Commune / Place Jacques-Cartier → de la Commune / Place Jacques-Cartier (374 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a95559040caf6178ad1c6e7f33ad8f69 = L.polyline(
+                [[45.5543734, -73.5513747], [45.551192, -73.540873]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 6.68}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_a95559040caf6178ad1c6e7f33ad8f69.bindTooltip(
+                `<div>
+                     Métro Pie-IX (Pierre-de-Coubertin / Desjardins) → Desjardins / Ontario (334 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d4d9c21b4f75ce53a17474add1773ab9 = L.polyline(
+                [[45.551192, -73.540873], [45.5543734, -73.5513747]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 6.48}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_d4d9c21b4f75ce53a17474add1773ab9.bindTooltip(
+                `<div>
+                     Desjardins / Ontario → Métro Pie-IX (Pierre-de-Coubertin / Desjardins) (324 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6b4f2ad9706d81b48072af02c794b3b7 = L.polyline(
+                [[45.453016, -73.571915], [45.459488, -73.572092]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 6.16}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_6b4f2ad9706d81b48072af02c794b3b7.bindTooltip(
+                `<div>
+                     Argyle / de Verdun → Métro Verdun (Willibrord / de Verdun) (308 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b8a9c3559ac019d60e60a40aca8aed9d = L.polyline(
+                [[45.513303, -73.572961], [45.5065198, -73.576405]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.68}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_b8a9c3559ac019d60e60a40aca8aed9d.bindTooltip(
+                `<div>
+                     Clark / Prince-Arthur → Milton / University (284 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3ddae821e6a09ff160ef244c753f0fec = L.polyline(
+                [[45.5543734, -73.5513747], [45.553219, -73.539782]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.62}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_3ddae821e6a09ff160ef244c753f0fec.bindTooltip(
+                `<div>
+                     Métro Pie-IX (Pierre-de-Coubertin / Desjardins) → Marché Maisonneuve (281 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b00df0417fefa624f5bf79c3a73dd86c = L.polyline(
+                [[45.5065198, -73.576405], [45.51059, -73.57547]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.58}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_b00df0417fefa624f5bf79c3a73dd86c.bindTooltip(
+                `<div>
+                     Milton / University → Prince-Arthur / du Parc (279 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_861b4d262fbbd629e5dc622278f465da = L.polyline(
+                [[45.5065198, -73.576405], [45.513303, -73.572961]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.4}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_861b4d262fbbd629e5dc622278f465da.bindTooltip(
+                `<div>
+                     Milton / University → Clark / Prince-Arthur (270 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f31f28fc30e753f6fb35bec0699290f9 = L.polyline(
+                [[45.459488, -73.572092], [45.453016, -73.571915]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.22}
+            ).addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            poly_line_f31f28fc30e753f6fb35bec0699290f9.bindTooltip(
+                `<div>
+                     Métro Verdun (Willibrord / de Verdun) → Argyle / de Verdun (261 trips)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_6856363b1d2cf3daa0b90721ceaf7c43.addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+    
+            var heat_map_2cc3cbc8ff29b6b705e0512a745d0254 = L.heatLayer(
+                [[45.5128006, -73.5311159, 922.0], [45.50761, -73.551836, 374.0], [45.5543734, -73.5513747, 334.0], [45.551192, -73.540873, 324.0], [45.453016, -73.571915, 308.0], [45.513303, -73.572961, 284.0], [45.5543734, -73.5513747, 281.0], [45.5065198, -73.576405, 279.0], [45.5065198, -73.576405, 270.0], [45.459488, -73.572092, 261.0], [45.5128006, -73.5311159, 922.0], [45.50761, -73.551836, 374.0], [45.551192, -73.540873, 334.0], [45.5543734, -73.5513747, 324.0], [45.459488, -73.572092, 308.0], [45.5065198, -73.576405, 284.0], [45.553219, -73.539782, 281.0], [45.51059, -73.57547, 279.0], [45.513303, -73.572961, 270.0], [45.453016, -73.571915, 261.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 15,
+  "blur": 10,
+}
+            );
+        
+    
+            heat_map_2cc3cbc8ff29b6b705e0512a745d0254.addTo(map_814f1889b4622e9d0024fc595498e2b3);
+        
+</script>
+</html>
