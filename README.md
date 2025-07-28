@@ -162,7 +162,7 @@ docker run -p 8000:8000 bixi-mlops-app
 
 ##  10. API Reference
 
-POST /predict
+POST '/predict'
 Input example:
 
 ```bash
@@ -191,4 +191,15 @@ Response:
 ```
 
 ##  11. Limitations & Future Work
+
+- Weather and user-type not yet integrated
+- No dynamic model re-training pipeline
+- Does not include station-level rebalancing strategies
+- Can be extended with a dashboard or React frontend
+
+
+##  13. Acknowledgements
+- BIXI Montréal for releasing such a great open dataset.
+- Open-source contributors to FastAPI, Prefect, Scikit-learn, and the Python community.
+
 
