@@ -162,7 +162,7 @@ docker run -p 8000:8000 bixi-mlops-app
 
 ##  10. API Reference
 
-POST '/predict'
+POST `/predict`
 Input example:
 
 ```bash
