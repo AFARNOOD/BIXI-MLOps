@@ -1,7 +1,7 @@
 # BIXI-MLOps
 
 
-# 🚴‍♀️ BIXI Trip Duration Prediction using MLOps Pipeline
+#  BIXI Trip Duration Prediction using MLOps Pipeline
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![FastAPI](https://img.shields.io/badge/API-FastAPI-green)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates an end-to-end MLOps pipeline for predicting trip durations in Montreal's BIXI bike-sharing system. Leveraging real-world open datasets from [BIXI Montréal](https://bixi.com/en/open-data), we apply machine learning to forecast how long a bike trip will take based on contextual and spatial features.
 
@@ -17,7 +17,7 @@ The pipeline includes model training, evaluation, deployment via FastAPI, and or
 
 ---
 
-## 🎯 Why this project?
+##  Why this project?
 
 Urban mobility services like BIXI are essential for sustainable and efficient cities. Predicting bike trip durations helps:
 
@@ -30,7 +30,7 @@ This project demonstrates how MLOps can be used in real-time transport solutions
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The data used in this project comes from BIXI Montréal’s official [Open Data Portal](https://bixi.com/en/open-data/). Specifically, the dataset for the **2023 season** was used:
 
@@ -47,7 +47,7 @@ We engineered features such as:
 
 ---
 
-## ❓ Problem Statement
+##  Problem Statement
 
 The goal is to build a machine learning model that predicts:
 
@@ -62,5 +62,58 @@ Using features such as:
 
 ---
 
-## 🏗️ Project Architecture
+##  Project Architecture
+
+bixi-mlops-project/
+│
+├── app/ # FastAPI app serving model
+│ └── main.py
+│
+├── data/ # Raw data (not included in repo)
+│
+├── model/ # Saved model file
+│ └── best_model.pkl
+│
+├── notebooks/ # Jupyter notebooks for EDA, training
+│
+├── pipeline/ # Prefect pipelines
+│ └── training_flow.py
+│
+├── requirements.txt # Python dependencies
+├── Dockerfile # Docker build for deployment
+└── README.md # You are here!
+
+
+---
+
+##  Tech Stack
+
+- Python 3.12
+-  JupyterLab
+-  Scikit-learn, Pandas, Joblib
+-  FastAPI (for API)
+-  Prefect 3.0 (for orchestration)
+-  Docker (for deployment)
+
+---
+
+##  Model Evaluation
+
+Final trained model (Random Forest):
+
+-  **RMSE:** 8.69 minutes
+-  **R² Score:** 0.46
+
+This means the model captures nearly half of the variation in trip duration — with potential for improvement using weather/user-type data.
+
+---
+
+##  Run the Project Locally
+
+###  Clone the repository
+
+```bash
+git clone https://github.com/your-username/bixi-mlops-project.git
+cd bixi-mlops-project
+
 
