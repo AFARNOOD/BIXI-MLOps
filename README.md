@@ -125,3 +125,29 @@ python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+###  8.3. Run the pipeline (via Jupyter or Prefect)
+
+Using Jupyter:
+
+```bash
+# Open notebooks/train_model.ipynb
+# Run all cells to train and save model
+```
+Or via Prefect:
+```bash
+prefect deployment build pipeline/training_flow.py:BIXI-ML-Training-Flow -n dev
+prefect deploy
+prefect agent start
+```
+
+###  8.4. Launch the API
+```bash
+uvicorn app.main:app --reload
+```
+
+Then visit: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+
+
+
