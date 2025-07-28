@@ -48,13 +48,6 @@ We engineered features such as:
 - `station_popularity`, and more
 
 ---
-## Interactive Start Station Heatmap
-
-[![View Heatmap](imgs/heatmap_preview.png)](https://github.com/AFARNOOD/BIXI-MLOps/blob/main/imgs/start_station_heatmap.html)
-
-Click the image to explore the interactive map showing BIXI start station density.
-
-
 
 ##  4. Problem Statement
 
