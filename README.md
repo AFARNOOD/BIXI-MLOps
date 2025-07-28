@@ -198,7 +198,7 @@ Response:
 - Can be extended with a dashboard or React frontend
 
 
-##  13. Acknowledgements
+##  12. Acknowledgements
 - BIXI Montréal for releasing such a great open dataset.
 - Open-source contributors to FastAPI, Prefect, Scikit-learn, and the Python community.
 
