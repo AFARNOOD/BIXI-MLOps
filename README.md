@@ -65,23 +65,24 @@ Using features such as:
 ##  Project Architecture
 
 bixi-mlops-project/
+├── app/
+│   └── main.py
 │
-├── app/ # FastAPI app serving model
-│ └── main.py
+├── data/
+│   └── raw_data.csv (not included in repo)
 │
-├── data/ # Raw data (not included in repo)
+├── model/
+│   └── best_model.pkl
 │
-├── model/ # Saved model file
-│ └── best_model.pkl
+├── notebooks/
+│   └── train_model.ipynb
 │
-├── notebooks/ # Jupyter notebooks for EDA, training
+├── pipeline/
+│   └── training_flow.py
 │
-├── pipeline/ # Prefect pipelines
-│ └── training_flow.py
-│
-├── requirements.txt # Python dependencies
-├── Dockerfile # Docker build for deployment
-└── README.md # You are here!
+├── requirements.txt
+├── Dockerfile
+└── README.md
 
 
 ---
