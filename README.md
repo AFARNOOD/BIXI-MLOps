@@ -1,7 +1,7 @@
 # BIXI-MLOps
 
 
-#  BIXI Trip Duration Prediction using MLOps Pipeline
+#  UrbanBikeML: A Reproducible MLOps Pipeline for Smart Mobility Analytics
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![FastAPI](https://img.shields.io/badge/API-FastAPI-green)
