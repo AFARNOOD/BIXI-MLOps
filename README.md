@@ -9,7 +9,7 @@
 
 ---
 
-##  Overview
+##  1. Overview
 
 This project demonstrates an end-to-end MLOps pipeline for predicting trip durations in Montreal's BIXI bike-sharing system. Leveraging real-world open datasets from [BIXI Montréal](https://bixi.com/en/open-data), we apply machine learning to forecast how long a bike trip will take based on contextual and spatial features.
 
@@ -17,7 +17,7 @@ The pipeline includes model training, evaluation, deployment via FastAPI, and or
 
 ---
 
-##  Why this project?
+##  2. Why this project?
 
 Urban mobility services like BIXI are essential for sustainable and efficient cities. Predicting bike trip durations helps:
 
@@ -30,7 +30,7 @@ This project demonstrates how MLOps can be used in real-time transport solutions
 
 ---
 
-##  Dataset
+##  3. Dataset
 
 The data used in this project comes from BIXI Montréal’s official [Open Data Portal](https://bixi.com/en/open-data/). Specifically, the dataset for the **2023 season** was used:
 
@@ -47,7 +47,7 @@ We engineered features such as:
 
 ---
 
-##  Problem Statement
+##  4. Problem Statement
 
 The goal is to build a machine learning model that predicts:
 
@@ -62,7 +62,7 @@ Using features such as:
 
 ---
 
-##  Project Architecture
+##  5. Project Architecture
 
 ```plaintextbixi-mlops-project/
 ├── app/
@@ -87,7 +87,7 @@ Using features such as:
 
 ---
 
-##  Tech Stack
+##  6. Tech Stack
 
 - Python 3.12
 -  JupyterLab
@@ -98,7 +98,7 @@ Using features such as:
 
 ---
 
-##  Model Evaluation
+##  7. Model Evaluation
 
 Final trained model (Random Forest):
 
@@ -109,12 +109,19 @@ This means the model captures nearly half of the variation in trip duration — 
 
 ---
 
-##  Run the Project Locally
+##  8. Run the Project Locally
 
-###  Clone the repository
+###  8.1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/bixi-mlops-project.git
 cd bixi-mlops-project
+```
 
+###  8.2. Install dependencies
 
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
