@@ -148,6 +148,47 @@ uvicorn app.main:app --reload
 
 Then visit: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
+##  9. Docker (Optional)
+Build the image
 
+```bash
+docker build -t bixi-mlops-app .
+```
+Run the container
 
+```bash
+docker run -p 8000:8000 bixi-mlops-app
+```
+
+##  10. API Reference
+
+POST /predict
+Input example:
+
+```bash
+{
+  "trip_distance_km": 2.5,
+  "hour": 17,
+  "day_of_week": 5,
+  "is_weekend": 0,
+  "start_lat": 45.508,
+  "start_lon": -73.561,
+  "end_lat": 45.511,
+  "end_lon": -73.554,
+  "start_station_popularity": 10,
+  "avg_trip_duration_from_station": 12.3,
+  "start_arrondissement": "Ville-Marie",
+  "end_arrondissement": "Le Plateau-Mont-Royal",
+  "month": 7
+}
+
+```
+Response:
+```bash
+{
+  "predicted_trip_duration_min": 18.03
+}
+```
+
+##  11. Limitations & Future Work
 
