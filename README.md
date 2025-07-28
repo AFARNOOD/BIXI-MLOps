@@ -7,7 +7,7 @@
 ![FastAPI](https://img.shields.io/badge/API-FastAPI-green)
 ![Prefect](https://img.shields.io/badge/MLOps-Prefect%203-blue)
 
-<img src="https://github.com/AFARNOOD/BIXI-MLOps/blob/main/imgs/ChatGPT%20Image%20Jul%2028%2C%202025%2C%2001_32_35%20PM.png" width="700" height="400">
+<img src="https://github.com/AFARNOOD/BIXI-MLOps/blob/main/imgs/ChatGPT%20Image%20Jul%2028%2C%202025%2C%2001_32_35%20PM.png" width="700" height="468">
 
 ---
 
