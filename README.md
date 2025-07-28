@@ -48,15 +48,6 @@ We engineered features such as:
 - `station_popularity`, and more
 
 ---
-## 🚲 Start Station Heatmap
-
-Explore the interactive heatmap of BIXI start stations:
-
-👉 [Click here to open full map](https://afarnood.github.io/BIXI-MLOps/imgs/Top_Origin-Destination_Pairs.html)
-
-[![Heatmap Preview](imgs/heatmap_preview.png)](https://afarnood.github.io/imgs/Top_Origin-Destination_Pairs.html)
-
----
 
 ##  4. Problem Statement
 
