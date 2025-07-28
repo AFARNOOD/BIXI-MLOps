@@ -52,9 +52,10 @@ We engineered features such as:
 
 Explore the interactive heatmap of BIXI start stations:
 
-👉 [Click here to open full map](https://afarnood.github.io/BIXI-MLOps/imgs/Top Origin-Destination Pairs.html)
- 
-[![Heatmap Preview](imgs/heatmap_preview.png)](https://afarnood.github.io/BIXI-MLOps/imgs/Top Origin-Destination Pairs.html)
+👉 [Click here to open full map](https://afarnood.github.io/BIXI-MLOps/imgs/Top_Origin-Destination_Pairs.html)
+
+[![Heatmap Preview](imgs/heatmap_preview.png)](https://afarnood.github.io/imgs/Top_Origin-Destination_Pairs.html)
+
 ---
 
 ##  4. Problem Statement
