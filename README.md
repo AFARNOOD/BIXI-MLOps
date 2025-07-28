@@ -64,7 +64,7 @@ Using features such as:
 
 ##  Project Architecture
 
-bixi-mlops-project/
+```plaintextbixi-mlops-project/
 ├── app/
 │   └── main.py
 │
@@ -83,7 +83,7 @@ bixi-mlops-project/
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
-
+```
 
 ---
 
