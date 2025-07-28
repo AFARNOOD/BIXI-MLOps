@@ -67,24 +67,38 @@ Using features such as:
 ##  5. Project Architecture
 
 ```plaintextbixi-mlops-project/
+BIXI-MLops/
 ├── app/
-│   └── main.py
+│   ├── main.py                   # FastAPI app exposing the prediction API
+│   ├── model_loader.py          # Helper function to load the trained model
 │
-├── data/
-│   └── raw_data.csv (not included in repo)
+├── imgs/                        # Visual outputs and data visualizations
+│   ├── ChatGPT Image Jul 28, 2025, 01_32_35 PM.png
+│   ├── Top Origin-Destination Pairs.html
+│   ├── start_station_heatmap.html
 │
-├── model/
-│   └── best_model.pkl
+├── model/                       # Trained model artifacts (e.g., .pkl files)
+│   └── best_model.pkl           # Output of Prefect pipeline model training
 │
-├── notebooks/
-│   └── train_model.ipynb
+├── notebooks/                   # Jupyter notebooks for step-by-step development
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_EDA.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_model_training.ipynb
+│   ├── 05_orchestration.ipynb
+│   └── mlruns/                  # MLflow experiment tracking output
 │
-├── pipeline/
-│   └── training_flow.py
+├── pipeline/                    # Prefect flow and task definitions
+│   ├── flow.py                  # Prefect flow logic (ETL + ML pipeline)
+│   ├── tasks.py                 # Individual Prefect tasks
+│   ├── utils.py                 # Helper functions used in pipeline
+│   └── __pycache__/             # Python cache (auto-generated)
 │
-├── requirements.txt
-├── Dockerfile
-└── README.md
+├── .gitignore                   # Git ignored files
+├── Dockerfile                   # Docker container specification
+├── requirements.txt             # Python dependencies
+└── README.md                    # Project documentation (you’re writing this now)
+
 ```
 
 ---
